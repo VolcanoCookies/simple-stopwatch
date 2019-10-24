@@ -30,7 +30,7 @@ function startTimer() {
 
 function start() {
 	reset();
-	runningTimer = setInterval(startTimer, 0.1);
+	runningTimer = setInterval(startTimer, 10);
 }
 
 function stop() {
@@ -41,5 +41,5 @@ function reset() {
 	clearInterval(runningTimer);
 	timer.innerHTML = "00:00";
 	milliseconds.innerHTML = "00"
-	time = 3600 * 59;
+	time = 0;
 }
