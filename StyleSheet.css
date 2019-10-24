@@ -1,0 +1,56 @@
+@charset "utf-8";
+/* CSS Document */
+
+.div-center {
+	position: relative;
+	border: solid black 1px;
+	padding: 0px;
+	vertical-align: middle;
+	margin: 250px auto;
+	width: 400px;
+	display: block;
+	text-align: center;
+}
+
+.text-timer {
+	position: relative;
+	font-family: 'Major Mono Display', monospace;
+	display: inline-block;
+	letter-spacing: -15px;
+	margin: 50px 0 10px;
+	font-size: 6em;
+}
+
+#milliseconds {
+	position: absolute;
+	top: 57px;
+	left: 345px;
+	letter-spacing: -5px;
+	font-size: 2em;
+	display: inline-block;
+}
+
+.button {
+	width: 100px;
+	height: 35px;
+	margin: 0px 25px 25px 25px;
+	border: none;
+	color: whitesmoke;
+	cursor: pointer;
+}
+
+.reset-button {
+	background-color: #FFC241;
+}
+
+.reset-button:hover {
+	background-color: #FDD06F;
+}
+
+.start-button {
+	background-color: #34B52E;
+}
+
+.start-button:hover {
+	background-color: #5ED458;
+}
