@@ -54,3 +54,30 @@
 .start-button:hover {
 	background-color: #5ED458;
 }
+
+.pause-button {
+	display: none;
+	background-color: #2967E4
+}
+
+.pause-button:hover {
+	background-color: #4C80E8;
+}
+
+.stop-button {
+	display: none;
+	background-color: #FF363A;
+}
+
+.stop-button:hover {
+	background-color: #FF595C;
+}
+
+.resume-button {
+	display: none;
+	background-color: #6D31FF;
+}
+
+.resume-button:hover {
+	background-color: #8350FF;
+}

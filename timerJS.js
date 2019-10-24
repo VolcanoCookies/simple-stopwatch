@@ -4,6 +4,13 @@ var timer = document.getElementById("timer");
 var millisecondsCounter = document.getElementById("milliseconds");
 var time = 0;
 
+// Buttons
+var startButton = document.getElementById('start-button');
+var resetButton = document.getElementById('reset-button');
+var pauseButton = document.getElementById('pause-button');
+var stopButton = document.getElementById('stop-button');
+var resumeButton = document.getElementById('resume-button');
+
 var runningTimer;
 
 function startTimer() {
@@ -30,6 +37,8 @@ function startTimer() {
 
 function start() {
 	reset();
+	startButton.style.display = 'none';
+	pauseButton.style.display = 'inline'
 	runningTimer = setInterval(startTimer, 10);
 }
 
@@ -37,8 +46,23 @@ function stop() {
 	clearInterval(runningTimer);
 }
 
+function pause() {
+	clearInterval(runningTimer);
+	pauseButton.style.display = 'none';
+	resumeButton.style.display = 'inline';
+}
+
+function resume() {
+	runningTimer = setInterval(startTimer, 10);
+	resumeButton.style.display = 'none';
+	pauseButton.style.display = 'inline';
+}
+
 function reset() {
 	clearInterval(runningTimer);
+	pauseButton.style.display = 'none';
+	resumeButton.style.display = 'none';
+	startButton.style.display = 'inline';
 	timer.innerHTML = "00:00";
 	milliseconds.innerHTML = "00"
 	time = 0;
